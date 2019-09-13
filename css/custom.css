@@ -66,8 +66,8 @@ body {
 #fixed_menu a {
 	color: #fff;
 	font-family: "Myriad Pro";
-	font-size: 14px;
-	margin-right: 3px;
+	font-size: 16px;
+	margin-right: 13px;
 	text-decoration: none;
 }
 
@@ -90,9 +90,10 @@ header .wrapper {
 	position: relative !important;
 }
 header .wrapper .girl {
+	height: 450px;
 	position: absolute;
-	left: -140px;
-	bottom: -185px;
+	left: -185px;
+	bottom: -230px;
 }
 
 header #logo {
@@ -390,7 +391,7 @@ header .block .best span {
 	background: url(../img/date.png);
 	width: 154px;
 	padding: 12px 10px 9px 15px;
-	font-size: 25px;
+	font-size: 22px;
 	position: absolute;
 	right: -6px;
 	bottom: 83px;
@@ -527,8 +528,9 @@ header .block .best span {
 
 #five .wrapper img.par {
 	position: absolute;
-	bottom: -340px;
+	bottom: -250px;
 	left: 200px;
+	height: 350px;
 }
 
 #five .yes {
