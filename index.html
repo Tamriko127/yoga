@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Шаблон</title>
-<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<title>Школа йоги</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<link rel="icon" type="image/png" href="img/fav.jpg">
@@ -11,62 +11,6 @@
 		<link rel="stylesheet" href="fonts/fonts.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery.reveal.js"></script>
-		<script src="js/countdown.js"></script>
-		<script src="js/scroll.js"></script>
-		<script src="http://maps.googleapis.com/maps/api/js?sensor=true" type="text/javascript"></script>
-		<script>
-			$(document).ready(function() {
-				google_maps(); // Load google maps onload page
-
-				function google_maps() {
-                var latlng = new google.maps.LatLng(53.533676,49.317241);
-                var settings = {
-                  zoom: 16,
-                  center: latlng,
-                  mapTypeControl: true,
-                  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-                  navigationControl: false,
-                  navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-                  mapTypeId: google.maps.MapTypeId.ROADMAP
-              };
-			 	var map = new google.maps.Map(document.getElementById("google_map"), settings);
-			  	var myLatlng = new google.maps.LatLng(53.533676,49.317241);
-
-			  	var myOptions = {
-	    zoom: 16,
-	    center: myLatlng,
-	    mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-
-    var yoga = new google.maps.LatLng(53.533721,49.319987);
-
-    var iconBase = 'img/';
-			var marker = new google.maps.Marker({position: yoga,map: map,icon: iconBase + 'marker.png'});
-	}
-
-
-				$('#countdown_dashboard').countDown({
-						targetDate: {
-							'day': 		21,
-							'month': 	12,
-							'year': 	2013,
-							'hour': 	17,
-							'min': 		34,
-							'sec': 		15	}
-					});
-				$('#countdown_dashboardd').countDown({
-						targetDate: {
-							'day': 		21,
-							'month': 	12,
-							'year': 	2013,
-							'hour': 	17,
-							'min': 		34,
-							'sec': 		15	}
-					});
-			});
-		</script>
 	</head>
 	<body>
 		<div id="fixed_menu">
@@ -497,40 +441,65 @@
 			     <a class="close-reveal-modal">&#215;</a>
 			</div>
 		</div>
-<!-- Yandex.Metrika informer -->
-<a href="http://metrika.yandex.ru/stat/?id=22571485&amp;from=informer"
-target="_blank" rel="nofollow"><img src="//bs.yandex.ru/informer/22571485/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:22571485,lang:'ru'});return false}catch(e){}"/></a>
-<!-- /Yandex.Metrika informer -->
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter22571485 = new Ya.Metrika({id:22571485,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/22571485" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 
 
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.reveal.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<script>
+		$(document).ready(function () {
+			google_maps(); // Load google maps onload page
+
+			function google_maps() {
+				var latlng = new google.maps.LatLng(53.533676, 49.317241);
+				var settings = {
+					zoom: 16,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: { style: google.maps.MapTypeControlStyle.DROPDOWN_MENU },
+					navigationControl: false,
+					navigationControlOptions: { style: google.maps.NavigationControlStyle.SMALL },
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("google_map"), settings);
+				var myLatlng = new google.maps.LatLng(53.533676, 49.317241);
+
+				var myOptions = {
+					zoom: 16,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+
+				var yoga = new google.maps.LatLng(53.533721, 49.319987);
+
+				var iconBase = 'img/';
+				var marker = new google.maps.Marker({ position: yoga, map: map, icon: iconBase + 'marker.png' });
+			}
+
+
+			$('#countdown_dashboard').countDown({
+				targetDate: {
+					'day': 21,
+					'month': 12,
+					'year': 2013,
+					'hour': 17,
+					'min': 34,
+					'sec': 15
+				}
+			});
+			$('#countdown_dashboardd').countDown({
+				targetDate: {
+					'day': 21,
+					'month': 12,
+					'year': 2013,
+					'hour': 17,
+					'min': 34,
+					'sec': 15
+				}
+			});
+		});
+	</script>
 	</body>
 </html>
